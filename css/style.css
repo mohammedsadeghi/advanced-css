@@ -89,6 +89,19 @@ body{
         transform: translateX(0);
     }
 }
+@keyframes moveinbottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+   80%{
+       transform: translateY(-20px);
+   }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .btn:link,
 .btn:visited{
     text-transform: uppercase;
@@ -98,6 +111,7 @@ body{
     border-radius: 100px;
     transition:all  0.2s;
     position: relative;
+    
 }
 .btn:hover{
     transform: translateY(-3px);
@@ -132,4 +146,8 @@ body{
 .btn:hover::after{
     transform: scale(1.5);
     opacity: 0;
+}
+.btn-animated{
+    animation: moveinbottom 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
 }
