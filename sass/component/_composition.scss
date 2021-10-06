@@ -1,0 +1,14 @@
+.composition{
+    position: relative;
+    
+    &_photo{
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.6);
+        position: absolute;
+
+        &_p1{
+            left: 0;
+            top: -2rem;
+        }
+    }
+}
