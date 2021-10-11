@@ -1,0 +1,14 @@
+@import '../abstract/varibles';
+
+
+
+.card{
+    background-color: orangered;
+    height: 50rem;
+    transition: all 2s;
+    &:hover{
+
+        transform: rotateY(180deg) scale(1.03) translateY(-1rem);
+         
+    }
+}

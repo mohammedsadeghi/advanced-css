@@ -1,14 +1,36 @@
+@import '../abstract/varibles';
 .composition{
     position: relative;
+   
     
     &_photo{
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.6);
         position: absolute;
+        outline-offset: 2rem;
+        transition: all 1s;
+        z-index: 10;
 
         &_p1{
             left: 0;
-            top: -2rem;
+            top: -8rem;
         }
+        &_p2{
+            right:0 ;
+            top: 2rem;
+        }
+        &_p3{
+            left: 20%;
+            top: 10rem;
+        }
+        &:hover{
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.1);
+            box-shadow: none 2.5 4rem rgba($color: #000000, $alpha: 0.6);
+            z-index: 11;
+        }
+    }
+    &:hover &_photo:not(:hover){
+        transform: scale(0.8);
     }
 }

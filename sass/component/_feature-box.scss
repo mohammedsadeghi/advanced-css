@@ -1,0 +1,29 @@
+@import '../abstract/varibles';
+.feature-box{
+    width: 100%;
+    background-color: rgba($color: $color-white, $alpha:0.8);
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,$alpha:0.4);
+    width:100%;
+    transition: all 0.8s;
+    
+    &__icon{
+        font-size: 6rem;
+        margin-bottom: 0.4rem;
+        display: inline-block;
+        background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    &:hover{
+        transform: translateY(-1.5rem);
+        scale: (1.1);
+        box-shadow: 0 3rem 6rem rgba($color-black,$alpha:0.5);
+    }
+    
+    
+}

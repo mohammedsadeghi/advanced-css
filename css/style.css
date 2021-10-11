@@ -109,6 +109,21 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.6); }
 
+.section-features {
+  margin-top: -8rem;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 88, 0.8)), url(../img/nat-4.jpg);
+  width: 100%;
+  background-size: cover;
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-tours {
+  margin-top: -10rem;
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0; }
+
 .btn:link,
 .btn:visited {
   font-size: 16px;
@@ -216,9 +231,58 @@ body {
   .row .col-3-of-4 {
     width: calc(((100% - 3 * 6rem) /4 * 3) + (2 * 6rem)); }
 
-.composition:not(last-child) {
-  margin-bottom: 6rem; }
+.composition {
+  position: relative; }
+  .composition_photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
+    position: absolute;
+    outline-offset: 2rem;
+    transition: all 1s;
+    z-index: 10; }
+    .composition_photo_p1 {
+      left: 0;
+      top: -8rem; }
+    .composition_photo_p2 {
+      right: 0;
+      top: 2rem; }
+    .composition_photo_p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition_photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.1);
+      box-shadow: none 2.5 4rem rgba(0, 0, 0, 0.6);
+      z-index: 11; }
+  .composition:hover .composition_photo:not(:hover) {
+    transform: scale(0.8); }
 
-.composition_photo {
-  width: 55%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6); }
+.feature-box {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  width: 100%;
+  transition: all 0.8s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b458);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem);
+    scale: 1.1;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5); }
+
+.card {
+  background-color: orangered;
+  height: 50rem;
+  transition: all 2s; }
+  .card:hover {
+    transform: rotateY(180deg) scale(1.03) translateY(-1rem); }

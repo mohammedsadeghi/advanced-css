@@ -22,3 +22,19 @@
         text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 0.6);
     }
 }
+.section-features{
+    margin-top: -8rem;
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom,rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8)),url(../img/nat-4.jpg);
+    width:100%;
+    background-size: cover;
+    transform: skewY(-7deg);
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+.section-tours{
+    margin-top: -10rem;
+    background-color: $color-grey-ligt-1;
+    padding: 25rem 0 50rem 0;
+}
