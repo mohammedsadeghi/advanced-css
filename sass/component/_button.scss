@@ -26,6 +26,13 @@
         background-color: $color-white;
     }
 }
+.btn__green{
+    background-color: $color-primary;
+    color: $color-white;
+    &::after{
+        background-color: $color-white;
+    }
+}
 .btn::after{
     content: "";
     display: inline-block;
