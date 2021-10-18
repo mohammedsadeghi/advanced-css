@@ -1,6 +1,8 @@
 @import '../abstract/varibles';
-.btn:link,
-.btn:visited{
+.btn{
+    &,
+    &:link,
+    &:visited{
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
@@ -9,16 +11,22 @@
     border-radius: 100px;
     transition:all  0.2s;
     position: relative;
+
+
     
+    
+    }
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba($color-black, 0.6);
+    }
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba($color-black, 0.4);
+    }
 }
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba($color-black, 0.6);
-}
-.btn:active{
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba($color-black, 0.4);
-}
+
+
 .btn-white{
     background-color: #fff;
     color: #777;
