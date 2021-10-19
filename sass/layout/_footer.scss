@@ -1,0 +1,62 @@
+@import '../abstract/varibles';
+
+.footer{
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    background-color: $color-grey-dark-3;
+    
+
+    &__logo-box{
+        // width: 10%;
+        // margin: 5rem auto;
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__logo{
+        width: 15rem;
+        height: auto;
+        margin: 2rem auto;
+    }
+
+
+
+
+
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+    &__navigation{
+        border-top: 1px solid $color-grey-ligt-1;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+    &__link{
+        transition: all 0.3s;
+        &:link,&:visited{
+            color: $color-grey-ligt-1;
+            background-color: $color-grey-dark-3;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        &:hover,&:active{
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black,0.6);
+            transform: scale(1.3);
+        }
+    }
+
+
+    &__copy-rigt{
+        color: $color-grey-ligt-1;
+        width: 80%;
+        float: right;
+    }
+}
